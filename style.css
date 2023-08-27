@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&family=Roboto+Serif:ital,opsz,wght@1,8..144,500&display=swap');
+*{
+    font-family: 'Kanit', sans-serif;
+    font-family: 'Roboto Serif', serif;
+}
+.navbar .navbar-nav .nav-item {
+    margin-left: 35px;
+}
+
+.circular-card {
+    border: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; 
+    background-color: white;
+    transition: transform 0.3s;
+}
+
+.circular-card:hover {
+    transform: scale(1.05);
+}
+
+.circular-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 20px auto; 
+}
+
+.circular-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+
+
+.card-body {
+    padding: 20px;
+}
+
+.card-body a.btn {
+    margin-top: 10px;
+}
+
+
+@media (max-width: 992px) {
+    .circular-card {
+        margin: 20px 10px; 
+    }
+}
+
